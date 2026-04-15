@@ -1,0 +1,620 @@
+1 selected
+
+
+Skip to content
+Using Gmail with screen readers
+1 of 9,978
+index
+Inbox
+
+Premsagar Sharma <premsagar.civil@gmail.com>
+Attachments
+4:42 PM (48 minutes ago)
+to me
+
+ One attachment
+  •  Scanned by Gmail
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VNEX INFRATECH Pvt. Ltd.</title>
+  <meta name="description" content="VNEX INFRATECH Pvt. Ltd. - Construction, Civil Work, Industrial Projects, Renovation and Turnkey Solutions." />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      color: #222;
+      line-height: 1.6;
+      background: #fff;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Header */
+    .header {
+      background: #0f172a;
+      color: #fff;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #f59e0b;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #f59e0b;
+    }
+
+    .menu-btn {
+      display: none;
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero {
+      height: 95vh;
+      background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      color: white;
+      max-width: 700px;
+      z-index: 2;
+      animation: fadeUp 1s ease;
+    }
+
+    .hero-content h1 {
+      font-size: 52px;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      margin-bottom: 28px;
+      color: #f1f5f9;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #f59e0b;
+      color: #fff;
+      padding: 13px 28px;
+      text-decoration: none;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #d97706;
+      transform: translateY(-2px);
+    }
+
+    /* Section */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+      font-size: 34px;
+      color: #0f172a;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: "";
+      width: 80px;
+      height: 4px;
+      background: #f59e0b;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .bg-light {
+      background: #f8fafc;
+    }
+
+    .bg-dark {
+      background: #0f172a;
+    }
+
+    .white {
+      color: white;
+    }
+
+    /* About */
+    .about-grid,
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: center;
+    }
+
+    .about-box {
+      background: #f1f5f9;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .about-box h3 {
+      color: #0f172a;
+      margin-bottom: 10px;
+      margin-top: 15px;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      color: #0f172a;
+      margin-bottom: 12px;
+    }
+
+    .dark-card {
+      background: #1e293b;
+      color: white;
+    }
+
+    .dark-card h3 {
+      color: #f59e0b;
+    }
+
+    /* Stats */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .stat-box {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .stat-box h2 {
+      font-size: 38px;
+      color: #f59e0b;
+    }
+
+    /* Projects */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .project {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-8px);
+    }
+
+    .project img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+
+    .project-content h3 {
+      margin-bottom: 8px;
+      color: #0f172a;
+    }
+
+    /* Contact */
+    .contact-info p {
+      margin-bottom: 14px;
+      font-size: 17px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background: #f8fafc;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 100%;
+      font-size: 15px;
+    }
+
+    /* Footer */
+    .footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      font-size: 28px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    /* Animation */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .cards,
+      .project-grid,
+      .stats,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-content h1 {
+        font-size: 38px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #0f172a;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 220px;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .hero-content h1 {
+        font-size: 32px;
+      }
+
+      .hero {
+        height: 85vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <h2 class="logo">VNEX <span>INFRATECH</span></h2>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <h1>Building the Future with Strength & Trust</h1>
+      <p>
+        VNEX INFRATECH Pvt. Ltd. provides quality construction, civil engineering,
+        industrial execution, renovation, and turnkey infrastructure solutions.
+      </p>
+      <a href="#contact" class="btn">Request a Quote</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div>
+        <h2 class="section-title" style="text-align:left;">About Us</h2>
+        <p>
+          VNEX INFRATECH Pvt. Ltd. is a trusted infrastructure and construction
+          company focused on quality, safety, innovation, and timely delivery.
+        </p>
+        <br>
+        <p>
+          We handle residential, commercial, industrial, and civil projects with
+          professional planning and strong execution standards.
+        </p>
+      </div>
+      <div class="about-box">
+        <h3>Our Vision</h3>
+        <p>To become a leading name in modern infrastructure and dependable construction services.</p>
+
+        <h3>Our Mission</h3>
+        <p>To deliver high-quality, cost-effective and durable construction solutions for every client.</p>
+      </div>
+    </div>
+
+    <div class="container stats">
+      <div class="stat-box">
+        <h2h2>
+        <p></p>
+      </div>
+      <div class="stat-box">
+        <h2>25+</h2>
+        <p>Expert Team</p>
+      </div>
+      <div class="stat-box">
+        <h2>10+</h2>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-box">
+        <h2>100%</h2>
+        <p>Client Satisfaction</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section bg-light" id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Residential Construction</h3>
+          <p>House construction, apartments, villas and complete residential project execution.</p>
+        </div>
+        <div class="card">
+          <h3>Commercial Construction</h3>
+          <p>Office spaces, showrooms, shops, commercial complexes and building solutions.</p>
+        </div>
+        <div class="card">
+          <h3>Industrial Projects</h3>
+          <p>Factory sheds, warehouses, industrial structures and infrastructure development.</p>
+        </div>
+        <div class="card">
+          <h3>Civil Work</h3>
+          <p>RCC work, road work, drainage, site development, boundary walls and foundations.</p>
+        </div>
+        <div class="card">
+          <h3>Renovation & Interiors</h3>
+          <p>Interior work, remodeling, repairs, false ceiling, flooring and finishing solutions.</p>
+        </div>
+        <div class="card">
+          <h3>Turnkey Projects</h3>
+          <p>Planning, design coordination, supervision, construction and final project handover.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Our Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Project 1">
+          <div class="project-content">
+            <h3>Residential Building</h3>
+            <p>Modern and durable residential construction project.</p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80" alt="Project 2">
+          <div class="project-content">
+            <h3>Commercial Complex</h3>
+            <p>Professional commercial infrastructure with quality finishing.</p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=900&q=80" alt="Project 3">
+          <div class="project-content">
+            <h3>Industrial Shed</h3>
+            <p>Reliable industrial execution and structural development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose -->
+  <section class="section bg-dark">
+    <div class="container">
+      <h2 class="section-title white">Why Choose Us</h2>
+      <div class="cards">
+        <div class="card dark-card">
+          <h3>Quality Work</h3>
+          <p>We maintain high construction standards and strong quality control.</p>
+        </div>
+        <div class="card dark-card">
+          <h3>Timely Delivery</h3>
+          <p>We complete projects within committed deadlines and proper planning.</p>
+        </div>
+        <div class="card dark-card">
+          <h3>Experienced Team</h3>
+          <p>Our engineers and technical team ensure reliable project execution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2 class="section-title" style="text-align:left;">Contact Us</h2>
+        <p><strong>Company Name:</strong> VNEX INFRATECH Pvt. Ltd.</p>
+        <p><strong>Phone:</strong> +917206670958</p>
+        <p><strong>Email:</strong> info.vnexinfra@gmail.com</p>
+        <p><strong>Address:</strong> Flat no F-8
+Royal Apartment 1st floor
+127/530 W 1 Saket Nagar
+Kanpur -208014 India</p>
+        <p><strong>Working Hours:</strong> Mon - Sat | 9:00 AM - 6:00 PM</p>
+      </div>
+
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Phone Number" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Inquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 VNEX INFRATECH Pvt. Ltd. | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a class="whatsapp-btn" href="https://wa.me/919876543210" target="_blank">💬</a>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you! Your inquiry has been submitted successfully.");
+    }
+  </script>
+
+</body>
+</html>
+index.html
+Displaying index.html.
